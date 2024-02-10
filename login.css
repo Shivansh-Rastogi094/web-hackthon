@@ -1,0 +1,154 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection{
+    background: #2D2F36;
+}
+::-webkit-selection{
+    background: #2D2F36;
+}
+::-moz-selection{
+    background: #2D2F36;
+}
+body{
+        background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+    background-size: cover;
+    background-repeat: no-repeat;
+overflow: hidden;
+    font-family: 'Inter UI' , sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.page{
+        background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.left{
+    height: 300px;
+}
+.right{
+    height: 340px;
+}
+@media(max-width: 767px){
+    .page{
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+.container{
+    display: flex;
+    height: 320px;
+    margin: 0 auto;
+    width: 640px;
+}
+@media (max-width:767px) {
+    .container{
+        flex-direction: columnn;
+        height: 630px;
+        width: 320px;
+    }
+}
+.left{
+    background: white;
+    height: calc(100% -40px);
+    top: 20px;
+    position: relative;
+    width: 50%;
+}
+@media (max-width: 767px){
+    .left{
+        height: 100%;
+        left: 20px;
+        width: calc(100% - 40px);
+        max-height: 270px;
+    }
+}
+.login{
+    font-size:50px;
+    font-weight: 900;
+    margin: 50px 40px 40px;
+}
+.eula{
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 40px;
+}
+.right{
+    background: #474A59;
+    box-shadow: 0px 0px 40px 16px rgba(0, 0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    width: 50%;
+}
+@media(max-width:767px){
+    .right{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 350px;
+    }
+}
+svg{
+    position:absolute;
+    width: 320px;
+}
+path{
+    fill: none;
+    stroke:url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+}
+.form{
+    margin:40px;
+    /* margin-top: 50px ; */
+    position: absolute;
+}
+label{
+    color: #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height:16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+input{
+    background: transparent;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline:none !important;
+    width: 100%;
+}
+input::-moz-focus-inner{
+    border: 0;
+}
+#submit {
+    color: #f8f8fc;
+    margin-top: 40px;
+    transition: color 300ms;
+    border-color: rgb(255, 0, 89);
+    background-color:#474A59 ;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+#submit:focus{
+    color:#f2f2f2;
+    
+}
+#submit:active{
+    color: #d0d0d2;
+}
